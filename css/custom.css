@@ -3,13 +3,17 @@
     src: url("/fonts/ostrich.otf");
 }
 
+@font-face {
+    font-family: Agency FB Bold;
+    src: url("/fonts/agency-fb-bold.ttf");
+}
 
 body {
     min-width: 100%;
     background-color: #f7f7f7 !important;
 /*    MAKES EVERYTHING AGENCY */
-/*    font-family: "Agency FB";*/
-/*    font-size: 140%*/
+    font-family: "Agency FB";
+    font-size: 140%
 }
 
 a {
@@ -134,7 +138,8 @@ a:hover {
 }
 
 #front_welcome {
-    font-weight: 500;
+/*    font-weight: 500;*/
+    font-family: 'Agency FB Bold';
     font-size: 80px;
     z-index: 2 !important;
 }
