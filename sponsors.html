@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Sponsors | UCI VRDC</title>
+    <style>
+        [data-sr] {
+            visibility: hidden;
+        }
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css?v=1.24" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-pink">
+        <a class="navbar-brand" href="/">UCI VRDC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a id="homeLink" class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About the Club</a>
+                    <div class="dropdown-menu fade" aria-labelledby="dropdown01">
+                        <a id="purposeLink" class="dropdown-item" href="/about.html">What is Hobby@UCI?</a>
+                        <a id="boardLink" class="dropdown-item" href="/board.html">Club Board</a>
+                        <a id="pastLink" class="dropdown-item active" href="/sponsors.html">Sponsors</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a id="newsLink" class="nav-link" href="/news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a id="resourcesLink" class="nav-link" href="/resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a id="eventLink" class="nav-link" href="/events.html">Event Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a id="contactLink" class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="a-fade">
+        <main role="main" id="swup">
+            <div id="board_jumbo" class="jumbotron">
+                <h1 id="about_head">Sponsors</h1>
+            </div>
+
+            <!-- /container -->
+
+        </main>
+    </div>
+    <hr>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-4 sm-icon" data-sr="wait 1.8s scale up 20%">
+                <a href="https://www.facebook.com/VRDCUCI/" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
+            </div>
+            <div class="col-md-4 sm-icon" data-sr="wait 1.9s scale up 20%">
+                <a href="https://discord.gg/z7fryT4" target="_blank"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
+            </div>
+            <div class="col-md-4 sm-icon" data-sr="wait 2s scale up 20%">
+                <a href="#"><img src="img/tw_logo.png" style="max-height: 8vh"></a>
+            </div>
+        </div>
+        <br><p data-sr="wait 2s scale up 20%">Site custom built by Marcus Wong &copy; VRDC 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swup.js"></script>
+    <script type="text/javascript" src="js/scrollReveal.js?v=1.13"></script>
+    <script>
+        window.sr = new scrollReveal({
+            delay: 'once',
+            mobile: false,
+            vFactor: .4
+        });
+        
+
+        document.addEventListener('swup:contentReplaced', event => {
+            $('#homeLink').removeClass('active');
+            $('#purposeLink').removeClass('active');
+            $('#boardLink').removeClass('active');
+            $('#pastLink').removeClass('active');
+            $('#newsLink').removeClass('active');
+            $('#eventLink').removeClass('active');
+            $('#contactLink').removeClass('active');
+            var x = document.title;
+            switch (x) {
+                case "Hobby@UCI":
+                    $('#homeLink').addClass('active');
+                    sr.init(); // fixes starting at About, makes animation always play
+                    break;
+                case "About | UCI VRDC":
+                    $('#purposeLink').addClass('active');
+                    sr.init();
+                    break;
+                case "Board | UCI VRDC":
+                    $('#boardLink').addClass('active');
+                    sr.init();
+                    break;
+                case "Past Months | UCI VRDC":
+                    $('#pastLink').addClass('active');
+                    sr.init();
+                    break;
+                case "News | UCI VRDC":
+                    $('#newsLink').addClass('active');
+                    sr.init();
+                    break;
+                case "404 Not Found":
+                    break;
+            }
+        });
+
+        window.onload = function() {}
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>VRDC - UCI Irvine</title>
+    <style>
+        [data-sr] {
+            visibility: hidden;
+        }
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css?v=1.24" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-pink">
+        <a class="navbar-brand" href="/">UCI VRDC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a id="homeLink" class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About the Club</a>
+                    <div class="dropdown-menu fade" aria-labelledby="dropdown01">
+                        <a id="purposeLink" class="dropdown-item" href="/about.html">What is VRDC?</a>
+                        <a id="boardLink" class="dropdown-item" href="/board.html">Club Board</a>
+                        <a id="pastLink" class="dropdown-item" href="/sponsors.html">Sponsors</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a id="newsLink" class="nav-link" href="/news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a id="resourcesLink" class="nav-link" href="/resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a id="eventLink" class="nav-link" href="/events.html">Event Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a id="contactLink" class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="a-fade">
+        <main role="main" id="swup">
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div id="front_jumbo" class="jumbotron row">
+                <div id="front_container">
+                    <h1 id="front_welcome" class="display-3 front_animate" data-sr="enter left move 50px over .5s wait .3s">Virtual Reality <br>Development Club</h1>
+                    <h2 id="front-nothing" data-sr="enter left move 50px over .5s wait .6s" class="front_animate">UCI's First Virtual Reality Student Organization</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 id="front_hobby_announce" class="display-4 front_animate" data-sr="enter left move 50px over .5s wait .9s">Be a part of VRDC during the 2018 - 2019 year!</h1><br>
+<!--                    <h1 id="front_hobby" class="display-4 front_animate" data-sr="enter left move 50px over .5s wait .9s">WEBSITE DEVELOPMENT</h1>-->
+                    <p class="front_animate" data-sr="enter left move 50px over .5s wait 1.2s"><a id="front_learn" class="btn btn-primary btn-lg" href="/about.html">LEARN MORE &raquo;</a></p>
+                </div>
+                <!-- Example row of columns -->
+                <div id="front_news_cont" class="col-sm-5 front_animate" data-sr="over .5s wait 1.5s">
+                    <h1 id="front_news_head">Club News</h1>
+                    <hr id="front_news_break">
+                    <div id="front_news_cont_inner">
+                         <div class="front_news_article">
+                            <a href="/news.html" onclick="changeBlog('/news/index.php/2018/05/17/may-2018-web-dev-progress-report/')">
+                                <h3 class="front_news_title">May 2018: Web Dev | Progress Report</h3>
+                            </a>
+                            <i>--- posted May 17, 2018 ---</i><br><br>
+                            <p class="front_news_descript">Web developers,<br>It's time for the monthly report on our web dev progress! (There's some exciting info in this one!) </p>
+                             <a class="btn btn-secondary front_news_read" href="/news.html" onclick="changeBlog('/news/index.php/2018/05/17/may-2018-web-dev-progress-report/')" role="button">Read more &raquo;</a>
+                        </div>
+                        <div class="front_news_article">
+                            <a href="/news.html" onclick="changeBlog('https://www.hobbyatuci.com/news/index.php/2018/05/15/fundraising-on-ring-road/')">
+                                <h3 class="front_news_title">Fundraising on Ring Road</h3>
+                            </a>
+                            <i>--- posted May 15, 2018 ---</i><br><br>
+                            <p class="front_news_descript">Hey hobbyists!<br>Do you like boba (bubble tea)? Well, we're selling $2 boba on Ring Road near the Student Center for fundraising, so feel free to come visit or help out!</p>
+                        </div>
+                        <div class="front_news_article">
+                            <a href="/news.html" onclick="changeBlog('https://www.hobbyatuci.com/news/index.php/2018/04/30/the-hobby-for-may-2018-is-website-development/')">
+                                <h3 class="front_news_title">The hobby for May 2018 is...WEBSITE DEVELOPMENT!</h3>
+                            </a>
+                            <i>--- posted April 30, 2018 ---</i><br><br>
+                            <p class="front_news_descript">What's up hobbyists!<br>Get ready to be creative, because this month's hobby is website development! Website development (web dev) is the process of designing and building a website. You might be thinking that you need to know how to code for web dev. Fear not, because you can actually make a full website without any coding! Throughout this month, we'll be using a tool called...</p>
+                            <a class="btn btn-secondary front_news_read" href="/news.html" onclick="changeBlog('https://www.hobbyatuci.com/news/index.php/2018/04/30/the-hobby-for-may-2018-is-website-development/')" role="button">Read more &raquo;</a>
+                        </div>
+                        <div class="front_news_article">
+                            <a href="/news.html" onclick="changeBlog('https://www.hobbyatuci.com/news/index.php/2018/04/27/april-2018-knitting-end-of-month-wrap-up/')">
+                                <h3 class="front_news_title">April 2018: Knitting | End of Month Wrap Up!</h3>
+                            </a>
+                            <i>--- posted April 27, 2018 ---</i><br><br>
+                            <p class="front_news_descript">Hobbyists,<br>Today was the the last meeting of April, and so we are finished with Knitting! I'll be recapping what we learned about knitting and where we ended up. (Spoiler: We actually accomplished a lot!)
+                                <!--                            <br>At first, knitting seamed difficult to most of us. In our first April meeting, 90% had no knitting experience and 84% said they thought it was going to be hard. Nevertheless, we cast ourselves on to the learning process, and...-->
+                            </p>
+                            <a class="btn btn-secondary front_news_read" href="/news.html" onclick="changeBlog('https://www.hobbyatuci.com/news/index.php/2018/04/27/april-2018-knitting-end-of-month-wrap-up/')" role="button">Read more &raquo;</a>
+                        </div>
+                        <div class="front_news_article">
+                            <a href="/news.html" onclick="changeBlog('https://www.hobbyatuci.com/news/index.php/2018/04/13/april-2018-knitting-progress-report/')">
+                                <h3 class="front_news_title">April 2018: Knitting | Progress Report</h3>
+                            </a>
+                            <i>--- posted April 13, 2018 ---</i><br><br>
+                            <p class="front_news_descript">Hello knitters!<br>Since we're in the middle of April, it's time for a progress report on our club progress in Knitting!</p>
+                            <a class="btn btn-secondary front_news_read" href="/news.html" onclick="changeBlog('https://www.hobbyatuci.com/news/index.php/2018/04/13/april-2018-knitting-progress-report/')" role="button">Read more &raquo;</a>
+                        </div>
+                    </div>
+                    <a href="/news.html">
+                        <h3 id="front_news_view_all" style="text-align: center">View all news...</h3>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- /container -->
+
+        </main>
+    </div>
+    <hr>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-4 sm-icon" data-sr="wait 1.8s scale up 20%">
+                <a href="https://www.facebook.com/VRDCUCI/" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
+            </div>
+            <div class="col-md-4 sm-icon" data-sr="wait 1.9s scale up 20%">
+                <a href="https://discord.gg/z7fryT4" target="_blank"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
+            </div>
+            <div class="col-md-4 sm-icon" data-sr="wait 2s scale up 20%">
+                <a href="#"><img src="img/tw_logo.png" style="max-height: 8vh"></a>
+            </div>
+        </div>
+        <br><p data-sr="wait 2s scale up 20%">Site custom built by Marcus Wong &copy; VRDC 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swup.js"></script>
+    <script type="text/javascript" src="js/scrollReveal.js?v=1.13"></script>
+    <script>
+        window.blogPage = "";
+        window.sr = new scrollReveal({
+            delay: 'once',
+            mobile: false,
+            vFactor: .4
+        });
+        var swup = new Swup({
+            preload: true,
+            reset: true
+        });
+
+        document.addEventListener('swup:contentReplaced', event => {
+            $('#homeLink').removeClass('active');
+            $('#purposeLink').removeClass('active');
+            $('#boardLink').removeClass('active');
+            $('#pastLink').removeClass('active');
+            $('#newsLink').removeClass('active');
+            $('#eventLink').removeClass('active');
+            $('#contactLink').removeClass('active');
+            var x = document.title;
+            switch (x) {
+                case "Hobby@UCI":
+                    $('#homeLink').addClass('active');
+                    sr.init(); // fixes starting at About, makes animation always play
+                    break;
+                case "About | UCI VRDC":
+                    $('#purposeLink').addClass('active');
+                    sr.init();
+                    break;
+                case "Board | UCI VRDC":
+                    $('#boardLink').addClass('active');
+                    sr.init();
+                    break;
+                case "Past Months | UCI VRDC":
+                    $('#pastLink').addClass('active');
+                    sr.init();
+                    break;
+                case "News | UCI VRDC":
+                    $('#newsLink').addClass('active');
+                    sr.init();
+                    if(blogPage != "") {
+                        document.getElementById("blog").src = blogPage;
+                        blogPage = "";
+                    }
+                    break;
+                case "404 Not Found":
+                    break;
+            }
+        });
+        
+        function changeBlog(url) {
+            blogPage = url;
+            return true;
+        }
+
+        window.onload = function() {
+        }
+    </script>
+
+</body>
+
+</html>
