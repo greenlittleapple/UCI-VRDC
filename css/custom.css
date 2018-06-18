@@ -7,6 +7,9 @@
 body {
     min-width: 100%;
     background-color: #f7f7f7 !important;
+/*    MAKES EVERYTHING AGENCY */
+/*    font-family: "Agency FB";*/
+/*    font-size: 140%*/
 }
 
 a {
@@ -36,6 +39,7 @@ a:hover {
 }
 
 .navbar {
+    font-family: "Agency FB";
     height: 100px;
     background-color: #f7f7f7;
     border-bottom: 2px solid #dddddd;
@@ -47,7 +51,7 @@ a:hover {
 }
 
 .nav-link {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 300;
     margin-right: 20px;
     color: black !important;
