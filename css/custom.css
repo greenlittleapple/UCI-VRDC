@@ -11,9 +11,6 @@
 body {
     min-width: 100%;
     background-color: #f7f7f7 !important;
-/*    MAKES EVERYTHING AGENCY */
-    font-family: "Agency FB";
-    font-size: 140%
 }
 
 a {
@@ -84,7 +81,7 @@ a:hover {
 
 .dropdown-item {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, .5);
@@ -140,15 +137,16 @@ a:hover {
 #front_welcome {
 /*    font-weight: 500;*/
     font-family: 'Agency FB Bold';
-    font-size: 80px;
+    font-size: 110px;
     z-index: 2 !important;
 }
 
 #front-nothing {
     font-style: italic;
     max-width: 80vw;
-    font-size: 40px;
+    font-size: 50px;
     color: #ddd;
+    font-family: "Agency FB";
 }
 
 #front_hobby_announce {
@@ -159,12 +157,6 @@ a:hover {
     margin-bottom: 0;
 }
 
-#front_hobby {
-    color: #A1E5AB;
-    font-size: 70px;
-    font-weight: 600;
-    font-family: Raleway;
-}
 
 #front_learn {
     font-size: 30px;
@@ -181,14 +173,14 @@ a:hover {
 
 @media (max-width: 600px) {
     #front-nothing {
-        font-size: 6vw;
+        font-size: 10vw;
     }
     #front_container {
         padding-left: 10vw;
     }
 
     #front_welcome {
-        font-size: 14vw;
+        font-size: 19vw;
     }
 
     #front_hobby_announce {
@@ -252,24 +244,28 @@ a:hover {
 }
 
 #front_news_cont_inner {
-    height: 600px;
+    height: 670px;
     overflow: auto;
     padding-top: 10px;
     background-color: #eeeeee;
 }
 
 .front_news_article {
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 4px solid #dddddd;
     margin-left: 10px;
     margin-bottom: 5px;
 }
 
 .front_news_title {
     margin-bottom: 0;
+    text-align: center;
 }
 
 .front_news_descript {
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-variant: small-caps
 }
 
 .front_news_read {

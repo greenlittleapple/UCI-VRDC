@@ -25,13 +25,13 @@ require('/news/wp-blog-header.php');
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/custom.css?v=1.24" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
 
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-pink">
-        <a class="navbar-brand" href="/">UCI VRDC</a>
+        <a class="navbar-brand" href="/"><img src="img/vrdc-logo.png" width=150px></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,9 +44,9 @@ require('/news/wp-blog-header.php');
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About the Club</a>
                     <div class="dropdown-menu fade" aria-labelledby="dropdown01">
-                        <a id="purposeLink" class="dropdown-item" href="/about.html">What is Hobby@UCI?</a>
+                        <a id="purposeLink" class="dropdown-item" href="/about.html">What is VRDC?</a>
                         <a id="boardLink" class="dropdown-item" href="/board.html">Club Board</a>
-                        <a id="pastLink" class="dropdown-item" href="/sponsors.html">Sponsors</a>
+                        <a id="sponsorLink" class="dropdown-item" href="/sponsors.html">Sponsors</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -107,7 +107,7 @@ require('/news/wp-blog-header.php');
             $('#homeLink').removeClass('active');
             $('#purposeLink').removeClass('active');
             $('#boardLink').removeClass('active');
-            $('#pastLink').removeClass('active');
+            $('#sponsorLink').removeClass('active');
             $('#newsLink').removeClass('active');
             $('#eventLink').removeClass('active');
             $('#contactLink').removeClass('active');
@@ -125,8 +125,8 @@ require('/news/wp-blog-header.php');
                     $('#boardLink').addClass('active');
                     sr.init();
                     break;
-                case "Past Months | UCI VRDC":
-                    $('#pastLink').addClass('active');
+                case "Sponsors | UCI VRDC":
+                    $('#sponsorLink').addClass('active');
                     sr.init();
                     break;
                 case "News | UCI VRDC":
