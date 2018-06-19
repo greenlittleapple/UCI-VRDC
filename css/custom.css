@@ -364,9 +364,10 @@ a:hover {
 }
 
 #about_head {
-    font-size: 72px;
+    font-size: 100px;
     color: #f7f7f7;
     text-align: center;
+    font-family: "Agency FB BOLD";
     text-shadow: 2px 3px 0 #000,
     -1px -1px 0 #000,
     1px -1px 0 #000,
