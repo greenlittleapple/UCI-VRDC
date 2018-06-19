@@ -135,7 +135,6 @@ a:hover {
 }
 
 #front_welcome {
-/*    font-weight: 500;*/
     font-family: 'Agency FB Bold';
     font-size: 110px;
     z-index: 2 !important;
@@ -289,7 +288,12 @@ a:hover {
     margin: 10px;
 }
 
+/* MOBILE */
 @media (max-width: 1200px) {
+    .nav-item {
+        border-bottom: 1px solid #555;
+    }
+
     .dropdown-menu.fade {
         display: none;
         opacity: 0;
