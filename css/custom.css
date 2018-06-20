@@ -270,6 +270,16 @@ a:hover {
     background-size: cover;
 }
 
+#sponsor_jumbo {
+    padding: 100px 0px 150px 0px;
+    margin-right: 0;
+    margin-bottom: 10;
+    background-color: #f7f7f7;
+    background-image: url("/img/sponsored.jpg");
+    background-position: 50% 70%;
+    background-size: cover;
+}
+
 #about-nothing {}
 
 .about-head {
@@ -350,10 +360,13 @@ a:hover {
     border: 2px solid;
 }
 
+.board-div {
+    width: 100%;
+}
+
 .board-desc {
     margin-top: 20px;
     border: 2px solid #c0c0c0;
-    height: auto;
 }
 
 .board-desc-head {
@@ -375,7 +388,8 @@ a:hover {
     max-width: 40%;
     max-height: 100%;
     border: 3px solid #555;
-    margin-bottom: 10px
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 .sponsor-desc {
@@ -402,7 +416,7 @@ html.is-animating .a-fade {
     width: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 769px) {
     #front-nothing {
         font-size: 10vw;
     }
@@ -435,23 +449,22 @@ html.is-animating .a-fade {
     }
     
     .board-pic {
-        margin: auto;
-        margin-top: 20px;
-        max-width: 70vw;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .board-desc {
         margin: auto;
-        max-width: 80vw;
+        max-width: 80vw !important;
         margin-top: 20px;
     }
 
     .board-desc-head {
-        font-size: 10vw;
+        font-size: 5vw;
     }
 
     .board-desc-info {
-        font-size: 5vw;
+        font-size: 20px;
     }
     
     #about_head {
@@ -514,15 +527,11 @@ html.is-animating .a-fade {
         max-width: 100vw;
     }
 
-    .board-pic {
-        max-width: 30vw;
-    }
-
     .board-desc,
     .board-desc-head,
     board-desc-info {
         max-width: 50vw;
-        max-height: 100vw;
+        max-height: max-content;
     }
     
     #front_news_cont {
