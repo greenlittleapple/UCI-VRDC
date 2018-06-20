@@ -251,13 +251,11 @@ a:hover {
 }
 
 #about_jumbo {
-    padding: 100px 0px 150px 0px;
+    padding: 100px 0px 200px 0px;
     margin-right: 0;
-    margin-bottom: 10;
-    background-color: #f7f7f7;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/000/151/445/non_2x/vector-cute-landscape-scene-background.jpg");
-    background-position: 50% 30%;
-    background-size: cover;
+    margin-bottom: 10px;
+    background-color: #55d;
+    #background-image: url("/img/vrdc-logo-anteater.png");
 }
 
 #board_jumbo {
@@ -431,11 +429,6 @@ html.is-animating .a-fade {
     #front_hobby_announce {
         font-size: 7vw;
     }
-
-    #front_hobby {
-        font-size: 10vw;
-    }
-
     #front_learn {
         font-size: 5vw;
     }
