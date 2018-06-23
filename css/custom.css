@@ -482,7 +482,7 @@ html.is-animating .a-fade {
 .resource-link:hover {
     text-decoration: none;
     color: rgba(255,255,255,1);
-    background: #444
+    background-color: rgba(0,0,0,.4);
 }
 
 @media (max-width: 769px) {
