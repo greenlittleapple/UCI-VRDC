@@ -369,6 +369,7 @@ a:hover {
 
 #about-join {
     max-width: 50vw;
+    margin: auto;
 }
 
 .about_desc {
@@ -448,6 +449,42 @@ html.is-animating .a-fade {
     width: auto;
 }
 
+#resource-list {
+    width: 50vw;
+    margin: auto;
+}
+
+.resource-cat {
+    border: 1px solid;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.resource-cat-header {
+    border-bottom: 1px solid;
+    padding: 5px;
+}
+
+.resource-link {
+    width: 95%;
+    color: #555555;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.resource-link:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    background: #444
+}
+
 @media (max-width: 769px) {
     #front-nothing {
         font-size: 10vw;
@@ -466,15 +503,15 @@ html.is-animating .a-fade {
     #front_learn {
         font-size: 5vw;
     }
-    
+
     #front_news_cont {
         max-width: 10vw !important;
     }
-    
+
     .board-meet {
         font-size: 7vw;
     }
-    
+
     .board-pic {
         margin-right: auto;
         margin-left: auto;
@@ -493,7 +530,7 @@ html.is-animating .a-fade {
     .board-desc-info {
         font-size: 20px;
     }
-    
+
     #about_head {
         font-size: 15vw;
     }
@@ -504,15 +541,15 @@ html.is-animating .a-fade {
     .about-head {
         font-size: 10vw;
     }
-    
+
     .about-text {
         text-align: center;
     }
-    
+
     .sponsor-img {
         max-width: 80%;
     }
-    
+
     .sponsor-desc {
         font-size: 4vw;
     }
@@ -527,6 +564,7 @@ html.is-animating .a-fade {
 }
 
 /* TABLET */
+
 @media (max-width: 1200px) {
     .nav-item {
         border-bottom: 1px solid #555;
@@ -564,7 +602,7 @@ html.is-animating .a-fade {
         max-width: 50vw;
         max-height: max-content;
     }
-    
+
     #front_news_cont {
         min-width: 90vw;
         margin: auto;
