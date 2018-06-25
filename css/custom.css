@@ -539,7 +539,7 @@ html.is-animating .a-fade {
     }
 
     .about-head {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     .about-text {
@@ -552,6 +552,10 @@ html.is-animating .a-fade {
 
     .sponsor-desc {
         font-size: 4vw;
+    }
+    
+    #join-form {
+        width: 100%;
     }
 }
 
@@ -620,5 +624,9 @@ html.is-animating .a-fade {
     }
     .sponsor-img {
         max-width: 60%;
+    }
+    
+    #about-join {
+        max-width: 90vw;
     }
 }
