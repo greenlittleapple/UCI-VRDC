@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
-    <title>About | UCI VRDC</title>
+    <title>About | VR at UCI</title>
     <style>
         [data-sr] {
             visibility: hidden;
@@ -39,13 +39,13 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" target="_blank" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About the Club</a>
                     <div class="dropdown-menu fade" aria-labelledby="dropdown01">
-                        <a id="purposeLink" class="dropdown-item active" href="about.html">What is VRDC?</a>
+                        <a id="purposeLink" class="dropdown-item active" href="about.html">What is VR@UCI?</a>
                         <a id="boardLink" class="dropdown-item" href="board.html">Club Board</a>
                         <a id="sponsorLink" class="dropdown-item" href="sponsors.html">Sponsors</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a id="joinLink" class="nav-link" href="join.html">Join VRDC!</a>
+                    <a id="joinLink" class="nav-link" href="join.html">Join VR@UCI!</a>
                 </li>
                 <li class="nav-item">
                     <a id="newsLink" class="nav-link" href="events.html">Events</a>
@@ -62,19 +62,19 @@
     <div class="a-fade">
         <main role="main" id="swup">
             <div id="about_jumbo" class="jumbotron text-center">
-                <h1 id="about_head" data-sr="over 1s">What is VRDC?</h1>
-                <a class="btn btn-lg about-btn" id="about-btn-about" style="background-color: #7ff77f" href="#about-main">About VRDC</a>
+                <h1 id="about_head" data-sr="over 1s">What is VR@UCI?</h1>
+                <a class="btn btn-lg about-btn" id="about-btn-about" style="background-color: #7ff77f" href="#about-main">About VR@UCI</a>
                 <a class="btn btn-lg about-btn" id="about-btn-join" style="background-color: #0cc" href="join.html">Join the Club!</a>
             </div>
             <div id="about-cont" class="container text-center">
                 <div id="about-main">
                     <img data-sr="enter bottom move 50px over 1s" id="about-img" src="img/vrdc-people.jpg" width="80%"><br><br>
-                    <h1 data-sr="enter bottom move 50px over 1s" class="about-head">About VRDC</h1>
-                    <p data-sr="enter left move 50px over 1s" id="about-main-text" class="about-text">&emsp;&emsp;We are a group of Virtual Reality enthusiasts dedicated to spreading VR awareness and developing VR projects! In Winter 2018, we formed Virtual Reality Development Club as a first of its kind student VR organization at UC Irvine to bring our enthusiasm to our fellow students. We have since established ourselves as a core part of the gaming community, created our <a href="projects.html" target="_blank">first VR game project</a>, hosted several <a href="https://www.informatics.uci.edu/vrcade-exposes-students-to-virtual-reality-trends-challenges-and-opportunities/" target="_blank">VR awareness events</a>, and cemented ourselves as the biggest VR group on campus, even being <a href="sponsors.html" target="_blank">sponsored by multiple organizations!</a></p>
+                    <h1 data-sr="enter bottom move 50px over 1s" class="about-head">About VR@UCI</h1>
+                    <p data-sr="enter left move 50px over 1s" id="about-main-text" class="about-text">&emsp;&emsp;We are a group of Virtual Reality enthusiasts dedicated to spreading VR awareness and developing VR projects! In Winter 2018, we formed Virtual Reality at UCI as a first of its kind student VR organization at UC Irvine to bring our enthusiasm to our fellow students. We have since established ourselves as a core part of the gaming community, created our <a href="projects.html" target="_blank">first VR game project</a>, hosted several <a href="https://www.informatics.uci.edu/vrcade-exposes-students-to-virtual-reality-trends-challenges-and-opportunities/" target="_blank">VR awareness events</a>, and cemented ourselves as the biggest VR group on campus, even being <a href="sponsors.html" target="_blank">sponsored by multiple organizations!</a></p>
                     <img data-sr="enter bottom move 50px over 1s" id="about-img" src="img/vrdc-intro-to-unity.jpg" width="80%"><br><br>
                     <p data-sr="enter left move 50px over 1s" id="about-main-text" class="about-text text-center">As a multipurpose organization, we have several types of meetings and events:
                         <br>
-                        <br><b>General Meetings - Fridays at 7PM in ICS 195</b>
+                        <br><b>General Meetings - (Tentative) Fridays at 7PM in ICS 195</b>
                         <br>We discuss club events and projects, and talk about VR in general.
                         <br><br><b>Project Meetings - TBD</b>
                         <br>We work on <a href="projects.html" target="_blank">the club project</a>.
@@ -174,7 +174,7 @@
     <footer class="container">
         <div class="row">
             <div class="col-md-4 sm-icon">
-                <a href="https://www.facebook.com/VRDCUCI/" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
+                <a href="https://www.facebook.com/VRatUCI/" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
             </div>
             <div class="col-md-4 sm-icon">
                 <a href="https://discord.gg/z7fryT4" target="_blank"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
@@ -184,7 +184,7 @@
             </div>
         </div>
         <br>
-        <p>Site custom built by Marcus Wong &copy; VRDC 2018</p>
+        <p>Site custom built by Marcus Wong &copy; VR@UCI 2018</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -212,23 +212,23 @@
             $('#contactLink').removeClass('active');
             var x = document.title;
             switch (x) {
-                case "VRDC - UC Irvine":
+                case "VR@UCI - UC Irvine":
                     $('#homeLink').addClass('active');
                     sr.init(); // fixes starting at About, makes animation always play
                     break;
-                case "About | UCI VRDC":
+                case "About | VR at UCI":
                     $('#purposeLink').addClass('active');
                     sr.init();
                     break;
-                case "Board | UCI VRDC":
+                case "Board | VR at UCI":
                     $('#boardLink').addClass('active');
                     sr.init();
                     break;
-                case "Sponsors | UCI VRDC":
+                case "Sponsors | VR at UCI":
                     $('#sponsorLink').addClass('active');
                     sr.init();
                     break;
-                case "News | UCI VRDC":
+                case "News | VR at UCI":
                     $('#newsLink').addClass('active');
                     sr.init();
                     break;

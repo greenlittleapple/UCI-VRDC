@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
-    <title>VRDC - UC Irvine</title>
+    <title>Virtual Reality at UCI</title>
     <style>
         [data-sr] {
             visibility: hidden;
@@ -39,13 +39,13 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About the Club</a>
                     <div class="dropdown-menu fade" aria-labelledby="dropdown01">
-                        <a id="purposeLink" class="dropdown-item" href="./about.html">What is VRDC?</a>
+                        <a id="purposeLink" class="dropdown-item" href="./about.html">What is VR@UCI?</a>
                         <a id="boardLink" class="dropdown-item" href="./board.html">Club Board</a>
                         <a id="sponsorLink" class="dropdown-item" href="./sponsors.html">Sponsors</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a id="joinLink" class="nav-link" href="./join.html">Join VRDC!</a>
+                    <a id="joinLink" class="nav-link" href="./join.html">Join VR@UCI!</a>
                 </li>
                 <li class="nav-item">
                     <a id="newsLink" class="nav-link" href="./events.html">Events</a>
@@ -65,12 +65,12 @@
             <!-- Main jumbotron for a primary marketing message or call to action -->
             <div id="front_jumbo" class="jumbotron row">
                 <div id="front_container">
-                    <h1 id="front_welcome" class="display-3 front_animate" data-sr="enter left move 50px over .5s wait .3s">Virtual Reality <br>Development Club</h1>
+                    <h1 id="front_welcome" class="display-3 front_animate" data-sr="enter left move 50px over .5s wait .3s">Virtual Reality at UCI</h1>
                     <h2 id="front-nothing" data-sr="enter left move 50px over .5s wait .6s" class="front_animate">UCI's First Virtual Reality Club</h2>
                     <br>
                     <br>
                     <br>
-                    <h1 id="front_hobby_announce" class="display-4 front_animate" data-sr="enter left move 50px over .5s wait .9s">Be a part of VRDC during the 2018 - 2019 year!</h1><br>
+                    <h1 id="front_hobby_announce" class="display-4 front_animate" data-sr="enter left move 50px over .5s wait .9s">Be a part of VR@UCI during the 2018 - 2019 year!</h1><br>
                     <!--                    <h1 id="front_hobby" class="display-4 front_animate" data-sr="enter left move 50px over .5s wait .9s">WEBSITE DEVELOPMENT</h1>-->
                     <p class="front_animate" data-sr="enter left move 50px over .5s wait 1.2s"><a id="front_learn" class="btn btn-primary btn-lg" href="about.html">LEARN MORE &raquo;</a></p>
                 </div>
@@ -125,7 +125,7 @@
     <footer class="container">
         <div class="row">
             <div class="col-md-4 sm-icon" data-sr="wait 1.8s scale up 20%">
-                <a href="https://www.facebook.com/VRDCUCI/" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
+                <a href="https://www.facebook.com/VRatUCI/" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
             </div>
             <div class="col-md-4 sm-icon" data-sr="wait 1.9s scale up 20%">
                 <a href="https://discord.gg/z7fryT4" target="_blank"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
@@ -135,7 +135,7 @@
             </div>
         </div>
         <br>
-        <p data-sr="wait 2s scale up 20%">Site custom built by Marcus Wong &copy; VRDC 2018</p>
+        <p data-sr="wait 2s scale up 20%">Site custom built by Marcus Wong &copy; VR@UCI 2018</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -166,23 +166,23 @@
             $('#contactLink').removeClass('active');
             var x = document.title;
             switch (x) {
-                case "VRDC - UC Irvine":
+                case "VR@UCI - UC Irvine":
                     $('#homeLink').addClass('active');
                     sr.init(); // fixes starting at About, makes animation always play
                     break;
-                case "About | UCI VRDC":
+                case "About | VR at UCI":
                     $('#purposeLink').addClass('active');
                     sr.init();
                     break;
-                case "Board | UCI VRDC":
+                case "Board | VR at UCI":
                     $('#boardLink').addClass('active');
                     sr.init();
                     break;
-                case "Sponsors | UCI VRDC":
+                case "Sponsors | VR at UCI":
                     $('#sponsorLink').addClass('active');
                     sr.init();
                     break;
-                case "News | UCI VRDC":
+                case "News | VR at UCI":
                     $('#newsLink').addClass('active');
                     sr.init();
                     if (blogPage != "") {
