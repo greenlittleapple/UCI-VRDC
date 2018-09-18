@@ -4,8 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="title" content="Virtual Reality at UCI">
+    <meta name="description" content="VR at UCI is Irvine's premier virtual reality student club, sponsored by HTC Vive and UCI Esports.">
+    <meta name="keywords" content="virtual reality, uci, uci, vr uci, vr at uci, vr @ uci, irvine vr, irvine virtual reality, virtual reality irvine, virtual reality club, uci club, uci vr club, vrdc, vr development club, vrdc uci, virtual reality development club, virtual reality at uci">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-type" content="text / html; charset = utf-8">
+    <meta name="language" content="English">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
     <title>Virtual Reality at UCI</title>
@@ -13,6 +17,7 @@
         [data-sr] {
             visibility: hidden;
         }
+
     </style>
 
     <!-- Bootstrap core CSS -->
@@ -95,19 +100,21 @@
                             <br>
                             <p class="front_news_descript"></p>
                         </div>
-                        <div style="background-color: #ccc"><p>&emsp;</p></div>
+                        <div style="background-color: #ccc">
+                            <p>&emsp;</p>
+                        </div>
                         <div class="front_news_article">
                             <h1 class="front_news_title" style="color:#aa5500">General Meetings</h1>
                             <br>
                             <p class="front_news_descript"><b>(Tentative) Every Friday at 6PM in ICS 195</b>.</p>
                         </div>
                         <div class="front_news_article">
-                                <h1 class="front_news_title" style="color:#0055aa">Project Development Sessions</h1>
+                            <h1 class="front_news_title" style="color:#0055aa">Project Development Sessions</h1>
                             <br>
                             <p class="front_news_descript"><b>TBD</b></p>
                         </div>
                         <div class="front_news_article">
-                                <h1 class="front_news_title" style="color:#00aa55">Unity Workshops</h1>
+                            <h1 class="front_news_title" style="color:#00aa55">Unity Workshops</h1>
                             <br>
                             <p class="front_news_descript"><b>TBD</b></p>
                         </div>
@@ -152,55 +159,14 @@
             mobile: false,
             vFactor: .4
         });
-        var swup = new Swup({
-            preload: true
-        });
-
-        document.addEventListener('swup:contentReplaced', event => {
-            $('#homeLink').removeClass('active');
-            $('#purposeLink').removeClass('active');
-            $('#boardLink').removeClass('active');
-            $('#sponsorLink').removeClass('active');
-            $('#newsLink').removeClass('active');
-            $('#eventLink').removeClass('active');
-            $('#contactLink').removeClass('active');
-            var x = document.title;
-            switch (x) {
-                case "VR@UCI - UC Irvine":
-                    $('#homeLink').addClass('active');
-                    sr.init(); // fixes starting at About, makes animation always play
-                    break;
-                case "About | VR at UCI":
-                    $('#purposeLink').addClass('active');
-                    sr.init();
-                    break;
-                case "Board | VR at UCI":
-                    $('#boardLink').addClass('active');
-                    sr.init();
-                    break;
-                case "Sponsors | VR at UCI":
-                    $('#sponsorLink').addClass('active');
-                    sr.init();
-                    break;
-                case "News | VR at UCI":
-                    $('#newsLink').addClass('active');
-                    sr.init();
-                    if (blogPage != "") {
-                        document.getElementById("blog").src = blogPage;
-                        blogPage = "";
-                    }
-                    break;
-                case "404 Not Found":
-                    break;
-            }
-        });
-
+        /*var swup = new Swup({ preload: true }); document.addEventListener('swup:contentReplaced', event => { $('#homeLink').removeClass('active'); $('#purposeLink').removeClass('active'); $('#boardLink').removeClass('active'); $('#sponsorLink').removeClass('active'); $('#newsLink').removeClass('active'); $('#eventLink').removeClass('active'); $('#contactLink').removeClass('active'); var x = document.title; switch (x) { case "VR@UCI - UC Irvine": $('#homeLink').addClass('active'); sr.init(); // fixes starting at About, makes animation always play break; case "About | VR at UCI": $('#purposeLink').addClass('active'); sr.init(); break; case "Board | VR at UCI": $('#boardLink').addClass('active'); sr.init(); break; case "Sponsors | VR at UCI": $('#sponsorLink').addClass('active'); sr.init(); break; case "News | VR at UCI": $('#newsLink').addClass('active'); sr.init(); if (blogPage != "") { document.getElementById("blog").src = blogPage; blogPage = ""; } break; case "404 Not Found": break; } }); */
         function changeBlog(url) {
             blogPage = url;
             return true;
         }
 
         window.onload = function() {}
+
     </script>
 
 </body>

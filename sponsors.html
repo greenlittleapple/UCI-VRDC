@@ -133,40 +133,7 @@
         });
 
 
-        document.addEventListener('swup:contentReplaced', event => {
-            $('#homeLink').removeClass('active');
-            $('#purposeLink').removeClass('active');
-            $('#boardLink').removeClass('active');
-            $('#sponsorLink').removeClass('active');
-            $('#newsLink').removeClass('active');
-            $('#eventLink').removeClass('active');
-            $('#contactLink').removeClass('active');
-            var x = document.title;
-            switch (x) {
-                case "VR@UCI - UC Irvine":
-                    $('#homeLink').addClass('active');
-                    sr.init(); // fixes starting at About, makes animation always play
-                    break;
-                case "About | VR at UCI":
-                    $('#purposeLink').addClass('active');
-                    sr.init();
-                    break;
-                case "Board | VR at UCI":
-                    $('#boardLink').addClass('active');
-                    sr.init();
-                    break;
-                case "Sponsors | VR at UCI":
-                    $('#sponsorLink').addClass('active');
-                    sr.init();
-                    break;
-                case "News | VR at UCI":
-                    $('#newsLink').addClass('active');
-                    sr.init();
-                    break;
-                case "404 Not Found":
-                    break;
-            }
-        });
+        /*var swup = new Swup({ preload: true }); document.addEventListener('swup:contentReplaced', event => { $('#homeLink').removeClass('active'); $('#purposeLink').removeClass('active'); $('#boardLink').removeClass('active'); $('#sponsorLink').removeClass('active'); $('#newsLink').removeClass('active'); $('#eventLink').removeClass('active'); $('#contactLink').removeClass('active'); var x = document.title; switch (x) { case "VR@UCI - UC Irvine": $('#homeLink').addClass('active'); sr.init(); // fixes starting at About, makes animation always play break; case "About | VR at UCI": $('#purposeLink').addClass('active'); sr.init(); break; case "Board | VR at UCI": $('#boardLink').addClass('active'); sr.init(); break; case "Sponsors | VR at UCI": $('#sponsorLink').addClass('active'); sr.init(); break; case "News | VR at UCI": $('#newsLink').addClass('active'); sr.init(); if (blogPage != "") { document.getElementById("blog").src = blogPage; blogPage = ""; } break; case "404 Not Found": break; } }); */
 
         window.onload = function() {}
     </script>
