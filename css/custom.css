@@ -123,6 +123,7 @@ a:hover {
     background-color: #f7f7f7;
     background-image: url("../img/front_background.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 #front_container {
@@ -260,8 +261,9 @@ a:hover {
     padding: 100px 0px 150px 0px;
     margin-right: 0;
     margin-bottom: 10px;
-    background-color: #55d;
-    #background-image: url("../img/vrdc-logo-anteater.png");
+    background-image: url("../img/board_blur.png");
+    background-position: 50% 15%;
+    background-size: cover;
 }
 
 .about-btn {
