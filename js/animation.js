@@ -12290,8 +12290,8 @@
 
 
         var SEPARATION = 100,
-            AMOUNTX = 50,
-            AMOUNTY = 50;
+            AMOUNTX = 25,
+            AMOUNTY = 25;
 
         var container;
         var camera, scene, renderer;
@@ -12370,8 +12370,6 @@
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
 
-            renderer.setSize(window.innerWidth, window.innerHeight);
-
         }
 
         //
@@ -12379,6 +12377,7 @@
         function onDocumentMouseMove(event) {
 
             mouseX = event.clientX - windowHalfX;
+            mouseY = event.clientY - windowHalfY;
 
         }
 
@@ -12419,6 +12418,7 @@
         }
 
         function render() {
+            if(mouseY)
 
             camera.position.x += (mouseX - camera.position.x) * .05;
             camera.position.y = 100;
