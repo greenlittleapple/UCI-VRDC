@@ -12349,7 +12349,8 @@
             }
 
             renderer = new THREE.CanvasRenderer();
-            renderer.setSize(1200, 600);
+        
+            console.log(window.getComputedStyle(document.body).getPropertyValue('--width')); renderer.setSize(window.getComputedStyle(document.body).getPropertyValue('--width'), 600);
             container.appendChild(renderer.domElement);
 
             document.addEventListener('mousemove', onDocumentMouseMove, false);
@@ -12369,7 +12370,7 @@
 
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
-
+            renderer.setSize(getComputedStyle(document.body).getPropertyValue("--width"), 600);
         }
 
         //

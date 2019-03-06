@@ -1,3 +1,5 @@
+/* --- FONTS --- */
+
 @font-face {
     font-family: 'Zelda';
     src: url('/fonts/zelda_regular-webfont.woff2') format('woff2'),
@@ -7,8 +9,10 @@
 
 }
 
+/* --- GENERAL --- */
+
 :root {
-    --width: 1200px;
+    --width: 1200;
 }
 
 body {
@@ -25,12 +29,19 @@ b {
     font-weight: 500 !important;
 }
 
-section {
-    width: var(--width);
-    margin: auto;
-    padding-top: 100px !important;
-    padding-bottom: 0;
+.fa {
+    padding: 5px;
 }
+
+.list-inline {
+    margin: auto;
+}
+
+.list-inline li {
+    padding: 0;
+}
+
+/* --- NAVBAR --- */
 
 #mainNav {
     height: 75px;
@@ -64,10 +75,13 @@ section {
 .navbar-right li a {
     margin: auto;
     padding: 25px;
+    padding-top: 25 !important;
     font-size: 20px;
     height: 100%;
     line-height: 100%;
 }
+
+/* --- LOGO HEADER --- */
 
 header {
     width: var(--width);
@@ -100,10 +114,19 @@ header {
 #logo-center img {
     position: absolute;
     top: 0;
-    bottom:0;
+    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+}
+
+/* --- SECTIONS --- */
+
+section {
+    width: var(--width);
+    margin: auto;
+    padding-top: 100px !important;
+    padding-bottom: 0;
 }
 
 #about,
@@ -120,6 +143,8 @@ section div h1 {
     width: fit-content;
     margin: auto;
 }
+
+/* --- BOARD --- */
 
 #board-row div {
     text-align: center;
@@ -142,12 +167,14 @@ section div h1 {
 
 
 #board-row .pres img {
-    width: 250px !important;
+    width: 250px;
 }
 
 #board-row img {
     width: 225px;
 }
+
+/* --- SIGNUP --- */
 
 #mc_embed_signup {
     font: 16px Lato, sans-serif;
@@ -172,19 +199,151 @@ section div h1 {
     font-size: 20px
 }
 
+/* --- SPONSORS --- */
+
 #sponsors div img {
     width: 300px;
     margin: 50px;
 }
 
-.fa {
-    padding: 5px;
+#ics {
+    width: 500px !important;
 }
 
-.list-inline {
-    margin: auto;
+/* --- RESPONSIVENESS --- */
+
+@media(max-width: 1200px) {
+    :root {
+        --width: 800;
+    }
+
+    .navbar-right li a {
+        padding: 10;
+    }
+    
+    #board-row .col-6, #board-row .col-4 {
+        width: 400;
+    }
 }
 
-.list-inline li {
-    padding: 0;
+@media(max-width: 1000px) {
+    .navbar-right li a {
+        margin-top: -10;
+    }
+
+    :root {
+        --width: 730;
+    }
+    
+    #board-row .col-6, #board-row .col-4 {
+        width: 365;
+    }
+    
+    .mapouter {
+        margin: auto !important;
+    }
+}
+
+@media(max-width: 767px) {
+    :root {
+        --width: 500;
+    }
+    
+    .navbar-toggle {
+        margin-top: 15px;
+    }
+    
+    .navbar-collapse {
+        height: fit-content;
+        max-height: fit-content !important;
+    }
+    
+    .navbar-right {
+        height: fit-content;
+        background-color: #f7f7f7;
+        border: 1px #7f7f7f solid;
+    }
+    
+    .navbar-right li a {
+        padding: 20px 0 30px 30px;
+        margin-top: 0;
+        border-bottom: 1px #7f7f7f solid;
+    }
+    
+    #gmap_canvas {
+        width: var(--width);
+    }
+    
+    #sponsors div img {
+        width: 200px;
+        margin: 50px;
+    }
+    
+    #ics {
+        width: 300px !important;
+    }
+    
+    #board-row img, #board-row .pres img {
+        width: 150px
+    }
+    
+    #board-row .col-6, #board-row .col-4 {
+        width: 250px;
+        max-height: 250px;
+    }
+    
+    #board-row div h4 {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 500px) {
+    :root {
+        --width: 90%;
+    }
+    
+    #logo-center img {
+        width: 90%;
+    }
+    
+    #board-row {
+        width: 100%;
+    }
+    
+    section h2 {
+        line-height: 3rem;
+    }
+    
+    #ics {
+        width: var(--width) !important;
+        margin: 0 !important;
+    }
+    
+    #board-row {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #board-row .col-6, #board-row .col-4 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px
+    }
+    
+    #board-row img, #board-row .pres img {
+        width: 50%;
+    }
+    
+    .navbar-brand {
+        width: 50%;
+        height: fit-content;
+        position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+    }
+    
+    .navbar-brand img {
+        width: 100%;
+        
+    }
 }
