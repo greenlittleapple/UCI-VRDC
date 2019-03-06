@@ -1,8 +1,9 @@
-<!doctype html>
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Virtual Reality at UCI">
     <meta name="description" content="VR at UCI is Irvine's premier virtual reality student club, sponsored by HTC Vive and UCI Esports.">
@@ -13,6 +14,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
     <title>Virtual Reality at UCI</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
         [data-sr] {
             visibility: hidden;
@@ -20,153 +24,218 @@
 
     </style>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="fonts/font-mfizz-2.4.1/font-mfizz.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
-<body>
+<body id="page-top" class="index">
 
-    <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-pink">
-        <a class="navbar-brand" href="index.html"><img src="img/vrdc-logo.png" width=150px></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div id="navInner">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top"><img src="img/logo.png"></a>
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a id="homeLink" class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About the Club</a>
-                    <div class="dropdown-menu fade" aria-labelledby="dropdown01">
-                        <a id="purposeLink" class="dropdown-item" href="./about.html">What is VR@UCI?</a>
-                        <a id="boardLink" class="dropdown-item" href="./board.html">Club Board</a>
-                        <a id="sponsorLink" class="dropdown-item" href="./sponsors.html">Sponsors</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a id="joinLink" class="nav-link" href="./join.html">Join VR@UCI!</a>
-                </li>
-                <li class="nav-item">
-                    <a id="newsLink" class="nav-link" href="./events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a id="newsLink" class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a id="resourcesLink" class="nav-link" href="./resources.html">Resources</a>
-                </li>
-            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#signup">Sign Up</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#board">Club Board</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#sponsors">Sponsors</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
-    <div class="a-fade">
-        <main role="main" id="swup">
 
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div id="front_jumbo" class="jumbotron row">
-                <div id="front_container">
-                    <h1 id="front_welcome" class="display-3 front_animate" data-sr="enter left move 50px over .5s wait .3s">Virtual Reality at UCI</h1>
-                    <h2 id="front-nothing" data-sr="enter left move 50px over .5s wait .6s" class="front_animate">UCI's First Virtual Reality Club</h2>
-                    <br>
-                    <br>
-                    <br>
-                    <h1 id="front_hobby_announce" class="display-4 front_animate" data-sr="enter left move 50px over .5s wait .9s">Be a part of VR@UCI during the 2018 - 2019 year!</h1><br>
-                    <!--                    <h1 id="front_hobby" class="display-4 front_animate" data-sr="enter left move 50px over .5s wait .9s">WEBSITE DEVELOPMENT</h1>-->
-                    <p class="front_animate" data-sr="enter left move 50px over .5s wait 1.2s"><a id="front_learn" class="btn btn-primary btn-lg" href="about.html">LEARN MORE &raquo;</a></p>
-                </div>
-                <!-- Example row of columns -->
-                <div id="front_news_cont" class="col-sm-5 front_animate" data-sr="over .5s wait 1.5s">
-                    <h1 id="front_news_head">Important Info</h1>
-                    <hr id="front_news_break">
-                    <div id="front_news_cont_inner">
-                        <div class="front_news_article">
-                            <br>
-                            <a href="events.html">
-                                <h1 class="front_news_title" style="color:#55aa00; font-size: 50px"><b>FALL INVOLVEMENT FAIR</b></h1>
-                            </a>
-                            <br>
-                            <p class="front_news_descript"></p>
-                        </div>
-                        <div class="front_news_article" style="border-bottom: none !important">
-                            <br>
-                            <a href="sponsors.html">
-                                <h1 class="front_news_title" style="color:#555;"><b>NEW SPONSORS!</b></h1>
-                            </a>
-                            <br>
-                            <p class="front_news_descript"></p>
-                        </div>
-                        <div style="background-color: #ccc">
-                            <p>&emsp;</p>
-                        </div>
-                        <div class="front_news_article">
-                            <h1 class="front_news_title" style="color:#aa5500">General Meetings</h1>
-                            <br>
-                            <p class="front_news_descript"><b>Thursday at 6:30 PM in ICS 209</b>.</p>
-                        </div>
-                        <div class="front_news_article">
-                            <h1 class="front_news_title" style="color:#0055aa">Project Development Sessions</h1>
-                            <br>
-                            <p class="front_news_descript"><b>TBD</b></p>
-                        </div>
-                        <div class="front_news_article">
-                            <h1 class="front_news_title" style="color:#00aa55">Unity Workshops</h1>
-                            <br>
-                            <p class="front_news_descript"><b>Introduction to Unity Editor - Thursday, October 18 <br> 6:30 - 7:50 pm </b></p>
-                        </div>
-                    </div>
-                </div>
-
+    <!-- Header -->
+    <header>
+        <div id="imgcontainer">
+            <div id="logo-center">
+                <img src="img/logo_white.png">
             </div>
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="text-center">
+            <h1>About VRUCI
+                <hr class="star-primary">
+            </h1>
 
-            <!-- /container -->
-
-        </main>
-    </div>
-    <hr>
-    <footer class="container">
-        <div class="row">
-            <div class="col-md-4 sm-icon" data-sr="wait 1.8s scale up 20%">
-                <a href="https://www.facebook.com/VRatUCI/" target="_blank"><img src="img/fb_logo.png" style="max-height: 8vh"></a>
-            </div>
-            <div class="col-md-4 sm-icon" data-sr="wait 1.9s scale up 20%">
-                <a href="https://discord.gg/z7fryT4" target="_blank"><img src="img/ds_logo.png" style="max-height: 8vh"></a>
-            </div>
-            <div class="col-md-4 sm-icon" data-sr="wait 2s scale up 20%">
-                <a href="mailto:vrdc@uci.edu" target="_blank"><img src="img/email.png" style="max-height: 5vh"></a>
-            </div>
+        </div>
+        <div class="text-center">
+            <p>Virtual Reality UCI is a first of its kind, student-oriented, campus organization at UC Irvine focused on the development and exploration of virtual reality, augmented reality, and more. Our club welcomes students from all backgrounds to discover new facets (? could be worded better)of VR technology. We provide a strong platform of both knowledge and hardware for students to develop virtual reality applications. Whether you are brand new to VR or are a VR expert, you will be able to find students to work alongside.
+            </p>
         </div>
         <br>
-        <p data-sr="wait 2s scale up 20%">Site custom built by Marcus Wong &copy; VR@UCI 2018</p>
+        <div class="row" style="width: 90%; margin: auto">
+            <div class="text-center">
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup">
+        <div class="text-center">
+            <h1>Sign Up
+                <hr class="star-primary">
+            </h1>
+        </div>
+        <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+        <div id="mc_embed_signup">
+            <form action="https://vratuci.us19.list-manage.com/subscribe/post?u=9323d2822d00ee48924fa6003&amp;id=5f953945cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9323d2822d00ee48924fa6003_5f953945cc" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+    </section>
+
+    <section id="board">
+        <div class="text-center">
+            <h1>Club Board
+                <hr class="star-primary">
+            </h1>
+        </div>
+        <div style="height: 500px"></div>
+    </section>
+
+    <section id="sponsors">
+        <div class="text-center">
+            <h1>Sponsors
+                <hr class="star-primary">
+            </h1>
+        </div>
+        <div style="height: 500px"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="text-center">
+            <h1>Contact Us
+                <hr class="star-primary">
+            </h1>
+            <a href="mailto:contact@vruci.com" id="email" target="_blank"><i class="fa fa-fw fa-envelope"></i>&nbsp;contact@vruci.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>ICS 195<br>Thursdays at 6:30PM</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/marcuswong890" class="btn-social btn-outline"><i class="fa fa-2x fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/marcuswong890" class="btn-social btn-outline"><i class="fa fa-2x fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        &copy; Marcus Wong<br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script text="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/swup.js"></script>
-    <script type="text/javascript" src="js/scrollReveal.js"></script>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.easing.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://use.fontawesome.com/4acef74768.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="/js/freelancer.min.js"></script>
+    <script src="js/three.min.js"></script>
     <script>
-        window.blogPage = "";
-        window.sr = new scrollReveal({
-            delay: 'once',
-            mobile: false,
-            vFactor: .4
-        });
-        /*var swup = new Swup({ preload: true }); document.addEventListener('swup:contentReplaced', event => { $('#homeLink').removeClass('active'); $('#purposeLink').removeClass('active'); $('#boardLink').removeClass('active'); $('#sponsorLink').removeClass('active'); $('#newsLink').removeClass('active'); $('#eventLink').removeClass('active'); $('#contactLink').removeClass('active'); var x = document.title; switch (x) { case "VR@UCI - UC Irvine": $('#homeLink').addClass('active'); sr.init(); // fixes starting at About, makes animation always play break; case "About | VR at UCI": $('#purposeLink').addClass('active'); sr.init(); break; case "Board | VR at UCI": $('#boardLink').addClass('active'); sr.init(); break; case "Sponsors | VR at UCI": $('#sponsorLink').addClass('active'); sr.init(); break; case "News | VR at UCI": $('#newsLink').addClass('active'); sr.init(); if (blogPage != "") { document.getElementById("blog").src = blogPage; blogPage = ""; } break; case "404 Not Found": break; } }); */
-        function changeBlog(url) {
-            blogPage = url;
-            return true;
+        jQuery.loadScript = function(url, callback) {
+            jQuery.ajax({
+                url: url,
+                dataType: 'script',
+                success: callback,
+                async: true
+            });
         }
-
-        window.onload = function() {}
-
+        $.loadScript("js/animation.js", function(){});
+    </script>
+    <script>
+        
     </script>
 
 </body>
